@@ -49,7 +49,7 @@ In case you use this work, please consider citing:
 1. Clone the repository (with --recursive)
 
 ```
-git clone --recursive https://github.com/vision-ime/faster-rcnn-graphics.git
+git clone --recursive https://github.com/ImageU/faster-rcnn-graphics.git
 ```
 
 The `recursive` option is necessary to download the fork version of 
