@@ -122,8 +122,8 @@ As in the case of evaluation, the parameters are defined
 [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_locally.md).
 
 
-## Exporting Inference Graphh
-Graph can be exported using
+## Exporting Inference Graph
+Graph can be exported using the following example:
 
 ```
 python tf-models/research/object_detection/export_inference_graph.py \
@@ -134,8 +134,8 @@ python tf-models/research/object_detection/export_inference_graph.py \
 --gpudev=0 &
 ```
 
-  
-
-
+To run inference for a single image, run this
+[script](/run_on_inference.py).
+Make the necessary path changes in the script before running.
 
 
