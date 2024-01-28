@@ -122,10 +122,20 @@ As in the case of evaluation, the parameters are defined
 [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/running_locally.md).
 
 
+## Exporting Inference Graph
+Graph can be exported using the following example:
 
+```
+python tf-models/research/object_detection/export_inference_graph.py \
+--input_type image_tensor \
+--pipeline_config_path=models/flowcharts/inceptionv2/pipeline.config \
+--trained_checkpoint_prefix models/flowcharts/inceptionv2/trained/model.ckpt-{checkpoint_number} \
+--output_directory models/flowcharts/inceptionv2/saved_model \
+--gpudev=0 &
+```
 
-  
-
-
+To run inference for a single image, run this
+[script](/run_on_inference.py).
+Make the necessary path changes in the script before running.
 
 
